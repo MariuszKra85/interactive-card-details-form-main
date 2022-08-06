@@ -1,0 +1,72 @@
+@use '../base/variables';
+.card{
+    width: 14rem;
+    height: 9rem;
+    position: relative;
+    color: variables.$color-White;
+    font-size: 1rem;
+    min-width: 300px;
+    
+    
+
+    &-back{
+        position: absolute;
+        top: 3rem;
+        left: 7%;
+        margin-left: 3rem;
+        z-index: 1;
+        background: url('../../images/bg-card-back.png') no-repeat;
+        background-size: contain;
+    }
+    &-front{
+        background: url('../../images/bg-card-front.png') no-repeat;
+        background-size: contain;
+        z-index: 2;
+        position: absolute;
+        left: 7%;
+        top: 8.2rem;
+    }
+
+    &-logo{
+        position: absolute;
+        top: 0.8rem;
+        left: 1.3rem;
+        width: 3.4rem;
+    }
+    &-number{
+        font-size: 1.1rem;
+        letter-spacing: 1.2px;
+        position: absolute;
+        top: 5rem;
+        left: 1.3rem;
+    }
+    &-name{
+        position: absolute;
+        font-size: 0.6rem;
+        top: 7rem;
+        left: 1.3rem;
+
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+    }
+    &-date{
+        position: absolute;
+        top: 7rem;
+        right: 3.5rem;
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+        letter-spacing: 2px;
+    }
+
+    &-cvc{
+        position: absolute;
+        top: 1.5rem;
+        left: 80%;
+        text-shadow: 2px 3px 3px variables.$color-Very-dark-violet;
+        letter-spacing: 2px;
+
+
+        
+    }
+}

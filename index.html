@@ -3,50 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+<meta name="author" content="Mariusz Krawczyk">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles/main.css">
   <title>Frontend Mentor | Interactive card details form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <header class="header">
-    <div class="card-back">
+    <div class="card card-back">
+      <p class="card-cvc">000</p>
     </div>
-    <div class="card-front">
+    <div class="card card-front">
       <img src="./images/card-logo.svg" alt="card logo" class="card-logo">
       <p class="card-number" id="card-number">0000 0000 0000 0000</p>
-      <p class="card name" id="card-name">Jane Appleseed</p>
-      <p class="card-date" id="card-date"></p>
+      <p class="card-name" id="card-name">Jane Appleseed</p>
+      <p class="card-date" id="card-date">12/22</p>
     </div>
 
   </header>
   <main class="main">
     <label for="name" class="input-label">
-      <input type="text" class="input" id="name" name="name">
+      Cardholder Name:
+      <input type="text" class="input" id="name" name="name" placeholder="eg. Jane Appleseed">
     </label>
     
     <label for="number" class="input-label">
-      <input type="number" class="input" id="number" name="number">
+      Card Number:
+      <input type="number" class="input" id="number" name="number" placeholder="eg 1234 5678 0000 0000">
     </label>
     
-    <label for="exp-month" class="input-label">
-      <input type="number" class="input" id="exp-month" name="exp-month">
-    </label>
+    <form class="wrapper">
+
+      <label for="exp-data" class="input-label">
+        Exp. Date (MM/YY):
+        <div class="data">
+
+          <input type="number" class="input data-inp" id="exp-month" name="exp-data" placeholder="eg 23">
+          <input type="number" class="input data-inp" id="exp-year" name="exp-data" placeholder="eg 21">
+        </div>
+      </label>
+      <label for="cvc" class="input-label">
+        CVC:
+        <input type="number" class="input" id="cvc" name="cvc" placeholder="eg 939">
+      </label>
+      <button class="btn" type="submit"> Confirm</button>
+    </form>
     
-    <label for="exp-year" class="input-label">
-      <input type="number" class="input" id="exp-year" name="exp-year">
-    </label>
-    
-    <label for="cvc" class="input-label">
-      <input type="number" class="input" id="cvc" name="cvc">
-    </label>
+
 
   </main>
 

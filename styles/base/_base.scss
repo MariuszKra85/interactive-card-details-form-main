@@ -1,0 +1,6 @@
+@use '../base/variables';
+body{
+    font-size: 10px;
+    font-family: variables.$font-space-grotesk;
+    min-height: 100vh;
+}
