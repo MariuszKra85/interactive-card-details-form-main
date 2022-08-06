@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="card-back">
+    </div>
+    <div class="card-front">
+      <img src="./images/card-logo.svg" alt="card logo" class="card-logo">
+      <p class="card-number" id="card-number">0000 0000 0000 0000</p>
+      <p class="card name" id="card-name">Jane Appleseed</p>
+      <p class="card-date" id="card-date"></p>
+    </div>
+
+  </header>
+  <main class="main">
+    <label for="name" class="input-label">
+      <input type="text" class="input" id="name" name="name">
+    </label>
+    
+    <label for="number" class="input-label">
+      <input type="number" class="input" id="number" name="number">
+    </label>
+    
+    <label for="exp-month" class="input-label">
+      <input type="number" class="input" id="exp-month" name="exp-month">
+    </label>
+    
+    <label for="exp-year" class="input-label">
+      <input type="number" class="input" id="exp-year" name="exp-year">
+    </label>
+    
+    <label for="cvc" class="input-label">
+      <input type="number" class="input" id="cvc" name="cvc">
+    </label>
+
+  </main>
+
+
+
+  <!-- 0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm -->
+
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
