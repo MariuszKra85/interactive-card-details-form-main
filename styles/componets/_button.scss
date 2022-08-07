@@ -1,0 +1,12 @@
+@use '../base/variables';
+
+.btn{
+
+    background-color: variables.$color-Very-dark-violet;
+ width: 100%;
+ height: 3rem;
+ color: variables.$color-White;
+ letter-spacing: 0.5px;
+ font-size: 1.2rem;
+ border-radius: 0.5rem;
+}

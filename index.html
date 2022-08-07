@@ -24,30 +24,33 @@
 
   </header>
   <main class="main">
-    <label for="name" class="input-label">
-      Cardholder Name:
-      <input type="text" class="input" id="name" name="name" placeholder="eg. Jane Appleseed">
-    </label>
-    
-    <label for="number" class="input-label">
-      Card Number:
-      <input type="number" class="input" id="number" name="number" placeholder="eg 1234 5678 0000 0000">
-    </label>
-    
-    <form class="wrapper">
+    <form action="submit">
 
-      <label for="exp-data" class="input-label">
-        Exp. Date (MM/YY):
-        <div class="data">
-
-          <input type="number" class="input data-inp" id="exp-month" name="exp-data" placeholder="eg 23">
-          <input type="number" class="input data-inp" id="exp-year" name="exp-data" placeholder="eg 21">
-        </div>
+      <label for="name" class="input-label">
+        Cardholder Name:
+        <input type="text" class="input" id="name" name="name" placeholder="eg. Jane Appleseed">
       </label>
-      <label for="cvc" class="input-label">
-        CVC:
-        <input type="number" class="input" id="cvc" name="cvc" placeholder="eg 939">
+      
+      <label for="number" class="input-label">
+        Card Number:
+        <input type="number" class="input" id="number" name="number" placeholder="eg 1234 5678 0000 0000">
       </label>
+      
+      <div class="wrapper">
+        
+        <label for="exp-data" class="input-label">
+          Exp. Date (MM/YY):
+          <div class="data">
+            
+            <input type="number" class="input data-inp" id="exp-month" name="exp-data" placeholder="eg 23">
+            <input type="number" class="input data-inp" id="exp-year" name="exp-data" placeholder="eg 21">
+          </div>
+        </label>
+        <label for="cvc" class="input-label">
+          CVC:
+          <input type="number" class="input" id="cvc" name="cvc" placeholder="eg 939">
+        </label>
+      </div>
       <button class="btn" type="submit"> Confirm</button>
     </form>
     

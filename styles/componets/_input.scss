@@ -1,16 +1,8 @@
 @use '../base/variables';
+@use '../abstracts/breakpoints';
 
 .input{
-    &-label{
-        padding-bottom: 1rem;
-        margin: 0 1rem;
-        display: flex;
-        flex-direction: column;
-        font-size: 0.8rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-
-    }
+    
     margin-top: 0.7rem;
     padding: 0.8rem;
     border: 1px solid variables.$color-Light-grayish-violet;
@@ -19,10 +11,23 @@
         color: variables.$color-Light-grayish-violet;
     }
 
+
+    &-label{
+        width: 100%;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+    }
+
+
 }
 .data{
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 45%;
     gap: 8px;
 }

@@ -1,6 +1,17 @@
+@use '../abstracts/breakpoints';
 .header{
     background: url('../../images/bg-main-mobile.png') no-repeat;
     background-size: cover;
     height: 25vh;
     margin-bottom: 5rem;
+
+    @include breakpoints.media('>=large'){
+        background: url(../../images/bg-main-desktop.png) cover no-repeat;
+        margin-bottom: 0;
+        height: 100vh;
+
+
+    }
+
+
 }

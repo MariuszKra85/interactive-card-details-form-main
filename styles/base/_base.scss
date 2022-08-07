@@ -1,6 +1,27 @@
 @use '../base/variables';
+@use '../abstracts/breakpoints';
+
+
 body{
-    font-size: 10px;
+    width: 100%;
+    overflow-x: hidden;
     font-family: variables.$font-space-grotesk;
     min-height: 100vh;
+
+    @include breakpoints.media('>=large'){
+            font-size: 20px;
+    }
+}
+form{
+    margin: 0 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoints.media('>=large'){
+        justify-content: center;
+        align-items: center;
+        margin-left: calc(5rem + 4%);
+        max-width: 40rem;
+    }
 }

@@ -1,12 +1,17 @@
 @use '../base/variables';
+@use '../abstracts/breakpoints';
 .card{
     width: 14rem;
     height: 9rem;
     position: relative;
     color: variables.$color-White;
-    font-size: 1rem;
+    font-size: 1em;
     min-width: 300px;
-    
+
+    @include breakpoints.media('>=xlarge'){
+        width: 25rem;
+        height: 19rem;
+        }
     
 
     &-back{
@@ -17,6 +22,13 @@
         z-index: 1;
         background: url('../../images/bg-card-back.png') no-repeat;
         background-size: contain;
+
+        
+        @include breakpoints.media('>=large'){
+        top: 45%;
+        margin-top: -5.1rem;
+        }
+
     }
     &-front{
         background: url('../../images/bg-card-front.png') no-repeat;
@@ -25,6 +37,9 @@
         position: absolute;
         left: 7%;
         top: 8.2rem;
+        @include breakpoints.media('>=large'){
+        top: 45%;
+        }
     }
 
     &-logo{
@@ -45,7 +60,7 @@
         font-size: 0.6rem;
         top: 7rem;
         left: 1.3rem;
-
+        font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 2px;
 
@@ -54,19 +69,60 @@
         position: absolute;
         top: 7rem;
         right: 3.5rem;
+        font-weight: 300;
         font-size: 0.6rem;
         letter-spacing: 1px;
         letter-spacing: 2px;
     }
 
     &-cvc{
+        font-size: 0.8rem;
         position: absolute;
-        top: 1.5rem;
-        left: 80%;
+        top: 3.8rem;
+        left: 12rem;
         text-shadow: 2px 3px 3px variables.$color-Very-dark-violet;
         letter-spacing: 2px;
 
 
         
     }
+
+    @include breakpoints.media('>=xlarge'){
+        width: 25rem;
+        height: 19rem;
+
+        &-back{
+            left: 13rem;
+            margin-top: -7.7rem;
+        }
+        &-front{
+            left: 10rem;
+        }
+        &-logo{
+            top: 1.5rem;
+            left: 2rem;
+            width: 5rem;
+        }
+        &-number{
+            font-size: 1.7rem;
+            letter-spacing: 2px;
+            top: 6.5rem;
+            left: 2rem;
+
+        }
+        &-name{
+            font-size: 1rem;
+            top: 10rem;
+            left: 2rem;
+
+        }
+        
+        &-date{
+            font-size: 1rem;
+            top: 10rem;
+            left: 19rem;
+
+        }
+        
+        }
 }

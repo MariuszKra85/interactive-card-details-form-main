@@ -1,6 +1,22 @@
+@use '../abstracts/breakpoints';
+body{
+    @include breakpoints.media('>=large'){
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        overflow: hidden;
+    }
+    @include breakpoints.media('>=xlarge'){
+        display: grid;
+        grid-template-columns: 500px 1fr;
+        overflow: hidden;
+    }
+
+}
+
 .main{
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 .wrapper{
